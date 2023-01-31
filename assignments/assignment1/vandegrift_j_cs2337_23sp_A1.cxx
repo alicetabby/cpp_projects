@@ -3,7 +3,6 @@
 
 #include <iostream>
 #include <iomanip>
-#include <cmath>
 using namespace std;
 
 const double JPY_RATE = 130.43;
@@ -36,7 +35,7 @@ double amount_entry() {
 void total_calculator(double AMOUNT) {
     if(AMOUNT <= 100)
         AMOUNT += 4.99;
-    else if((AMOUNT > 100) && (AMOUNT <= 1000))
+    else if(AMOUNT <= 1000)
         AMOUNT += 8.99;
     else
         AMOUNT += 17.99;
