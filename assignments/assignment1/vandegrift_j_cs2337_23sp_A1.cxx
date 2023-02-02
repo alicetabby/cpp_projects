@@ -50,25 +50,22 @@ void conversion_calculator(int CHOICE, double AMOUNT) {
     const int INR = 3;
     const int GBP = 4;
     double AMOUNT_RECEIVED;
-
+    
+    cout << fixed << setprecision(2);
     if(CHOICE == JPY) {
         AMOUNT_RECEIVED = AMOUNT * JPY_RATE;
-        cout << fixed << setprecision(2);
         cout << "Amount received: " << AMOUNT_RECEIVED << " JPY" << endl;
     }
     else if(CHOICE == MXN) {
         AMOUNT_RECEIVED = AMOUNT * MXN_RATE;
-        cout << fixed << setprecision(2);
         cout << "Amount received: " << AMOUNT_RECEIVED << " MXN" << endl;
     }
     else if(CHOICE == INR) {
         AMOUNT_RECEIVED = AMOUNT * INR_RATE;
-        cout << fixed << setprecision(2);
         cout << "Amount received: " << AMOUNT_RECEIVED << " INR" << endl;
     }
     else if(CHOICE == GBP) {
         AMOUNT_RECEIVED = AMOUNT * GBP_RATE;
-        cout << fixed << setprecision(2);
         cout << "Amount received: " << AMOUNT_RECEIVED << " GBP" << endl;
     }
 }
