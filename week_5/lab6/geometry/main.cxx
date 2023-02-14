@@ -19,5 +19,14 @@ int main() {
   cout << "p1 == p2 " << (p1 == p2) << endl;
   cout << "p1 == p3 " << (p1 == p2) << endl;
 
+  cout << "p1 != p2 " << (p1 != p2) << endl;
+  cout << "p1 != p3 " << (p1 != p2) << endl;
+
+  point p4;
+  p4 = p1 + p3;
+  cout << "x = " << p4.getx() << endl;
+  cout << "y = " << p4.gety() << endl;
+
+
   return 0;
 }
