@@ -14,4 +14,6 @@ class point {
 
 };
 bool operator ==(const point& p1, const point& p2);
+bool operator !=(const point& p1, const point& p2);
+point operator +(const point& p1, const point& p2);
 #endif
