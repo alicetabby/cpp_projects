@@ -1,3 +1,4 @@
+#include <cmath>
 #include "point.h"
 
 /*
@@ -18,6 +19,13 @@ double point::getx() const{
 
 double point::gety() const{
   return y;
+}
+
+double point::dist(point& p) {
+  double a = x - p.getx();
+  double b = y - p.gety();
+  double c = sqrt((a*a)+(b*b));
+  return c;
 }
 
 bool operator ==(const point& p1, const point& p2) {

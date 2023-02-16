@@ -9,6 +9,8 @@ class point {
     double getx() const;
     double gety() const;
 
+    double dist(point& p);
+
   private:
     double x, y;
 
