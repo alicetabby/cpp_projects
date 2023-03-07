@@ -6,20 +6,15 @@ using namespace cs2337_23sp_bag;
 int main()
 {
         bag b;
-        
-        b.insert(8);
-        b.insert(4);
-        b.insert(8);
+        b.insert(11);
+        b.insert(12);
+        b.insert(11);
 
-        cout << "b.size() = " << b.size() << endl;
+        b += b;
+        int n = b.size();
 
-        bool check = b.erase_one(10);
-        cout << "check = " << check << endl;
+        cout << "n = " << n << endl;
 
-        check = b.erase_one(8);
-        cout << "check = " << check << endl;
-        
-        cout << "b.size() = " << b.size() << endl;
 
         return 0;
 }

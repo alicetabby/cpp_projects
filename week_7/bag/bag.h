@@ -3,6 +3,7 @@
 
 #include <cstdlib>
 #include <cassert>
+#include <algorithm>
 
 namespace cs2337_23sp_bag {
         class bag {
@@ -17,6 +18,8 @@ namespace cs2337_23sp_bag {
                         void insert(const value_type& entry);
                         size_type count(const value_type& target) const;
                         bool erase_one(const value_type& target);
+                        size_type erase(const value_type& target);
+                        void operator +=(const bag& b);
 
                 private:
                         value_type data[CAPACITY];
