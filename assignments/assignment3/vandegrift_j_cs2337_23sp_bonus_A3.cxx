@@ -58,40 +58,6 @@ double stdev(double A[], size_t n)
         return sqrt(NUMERATOR / n);
 }
 
-// BONUS: 10 points
-// This function goes through the n elements in array A and for each of
-// the following intervals, counts the number of elements that fall within
-// each respective interval.
-//
-//  [0,10),[10,20),[20,30),[30,40),[40,50),[50,60),[60,70),[70,80),[80,90),[90,100]
-//
-// Here, [ means inclusive and ) means exclusive. For example, [50, 60) denotes
-// all numbers greater than or equal to 50 and less than 60. As an example,
-// suppose the numbers in the sequence are (in no particular order):
-//      2, 91.1, 30, 32, 5.3, 40, 41, 88.8, 63, 45.1, 45, 3, 99, 30
-//
-// Then, once the counts are collected for the above example, the program
-// will print out the following to the terminal:
-//   [0,10)   {.21} ***
-//   [10,20)
-//   [20,30)
-//   [30,40)  {.21} ***
-//   [40,50)  {.29} ****
-//   [50,60)
-//   [60,70)  {.07} *
-//   [70,80)
-//   [80,90)  {.07} *
-//   [90,100] {.14} **
-//
-// The numbers in the curly brackets denote a percentage, which is the count
-// for the range divided by total number of elements. For example, the interval
-// [30,40) has 3 items (30,30,32) that fall in this interval
-// (i.e., 3 asterisks are printed) and the percentage is 3/14 = .21 
-// (print two significant digits after the decimal - you can do
-// rounding, floor, ceiling, etc..., which can be found in <cmath>). 
-// Notice that the dynamic aspects of the print out are the percentages
-// and number of asterisks denoting counts.
-//
 void print_dist(double A[], size_t n)
 {
         int SET[10] = {0};
